@@ -3,7 +3,12 @@ from telebot import types
 bot = telebot.TeleBot("TOKEN", parse_mode=None) 
 from PIL import Image
 import os
+"""
+Developed By Mahmoud Alarby
+	@Seth0x41 --> Facebook
+	https://t.me/M7moudAl3rby --> Telegram
 
+"""
 @bot.message_handler(commands=['start'])
 def startMessage(message):
     bot.send_message(chat_id=message.chat.id,text= """
