@@ -60,7 +60,6 @@ def processing(message):
                 elif lecture.endswith(".pdf"):
                     doc = open(url, 'rb')
                     bot.send_document(message.chat.id, doc)
-                    bot.send_document(message.chat.id, "FILEID")
                 elif lecture.endswith(".txt"):
                     with open(url,'rb') as f:
                         data = f.read()
